@@ -1,0 +1,1578 @@
+/* --- INDHOLDFORTEGNELSE
+
+1. Variabler og overordnet styling
+2. Layout og grid
+3. KEYFRAMES
+4. HEADER
+5. FORSIDE
+6. MENU
+7. OM
+8. PORTFOLIO
+9. TEMA 0
+10. TEMA 1
+11. TEMA 2
+12. TEMA 3
+13. TEMA 4
+14. EVT.
+
+----- */
+
+
+/* ------- Variabler og overordnet styling ---------- */
+
+h1 {
+    font-size: 2.5em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+
+
+li {
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2;
+}
+
+ul {
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+@media only screen and (max-width: 1023px) {
+
+    ul {
+        margin-bottom: 50px;
+        margin-left: 30px;
+    }
+
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+    display: block;
+}
+
+
+.bigtema0:hover {
+    animation: reduce 0.3s 1 forwards;
+}
+
+.bigtema1:hover {
+    animation: reduce 0.3s 1 forwards;
+}
+
+.bigtema2:hover {
+    animation: reduce 0.3s 1 forwards;
+}
+
+.bigtema3:hover {
+    animation: reduce 0.3s 1 forwards;
+}
+
+.bigtema4:hover {
+    animation: reduce 0.3s 1 forwards;
+}
+
+header a:hover {
+    animation: none;
+}
+
+.frontpage:hover {
+    animation: rotate_360 0.2s infinite linear;
+
+}
+
+@media only screen and (max-width: 1023px) {
+
+    /*
+    a:hover {
+        animation: none;
+    }*/
+
+    .frontpage:hover {}
+
+}
+
+/* ------- Layout og grid ---------- */
+html {}
+
+body {
+    width: 100%;
+    height: 100%;
+    animation: fade_in 1s 1;
+    margin: 0 auto;
+
+}
+
+header {
+    z-index: 1000;
+}
+
+.menu {
+    z-index: 1000;
+}
+
+.frontpage {
+    z-index: 1000;
+}
+
+img {
+    width: 100%;
+}
+
+* {
+
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1023px) {
+
+    * {
+        margin: 0;
+    }
+}
+
+
+
+
+/* ------- KEYFRAMES ---------- */
+@keyframes fade_in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide_in_left {
+    0% {
+        transform: translate(-300px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate_360 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
+
+@keyframes rotate_x-axis {
+    0% {
+        transform: rotateX(0)
+    }
+
+    100% {
+        transform: rotateX(360deg);
+
+    }
+}
+
+
+@keyframes reduce {
+
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+
+}
+
+@keyframes fade_out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+/* ------- HEADER ---------- */
+
+header {
+
+    width: 100vw;
+    flex-wrap: wrap;
+    display: flex;
+
+
+}
+
+.frontpage {
+    background-image: url(img/color.svg);
+    background-size: 100%;
+    height: 80px;
+    width: 80px;
+    margin: 2vw;
+    position: fixed;
+    animation: rotate_360 30s infinite linear;
+
+
+
+}
+
+.block {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 2vw;
+}
+
+.menu {
+
+    background-image: url(img/menu.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    margin: 2vw;
+    position: fixed;
+    right: 0;
+
+
+
+}
+
+@media only screen and (max-width: 767px) {
+    .menu {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+/* ------- FORSIDE ---------- */
+
+.title {
+    background-image: url(img/name.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 400px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.introduction {
+    text-align: center;
+    margin: 0 100px 100px 100px;
+
+}
+
+
+
+.color_palette_big {
+
+    background-image: url(img/color.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 1200px;
+    width: 1100px;
+    margin: auto;
+    animation: rotate_360 60s infinite linear;
+
+
+}
+
+
+
+
+@media only screen and (max-width: 1100px) {
+    .color_palette_big {
+        height: 850px;
+        width: 768px;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 767px) {
+    .title {
+        height: 150px;
+        width: 300px;
+    }
+
+    .color_palette_big {
+        height: 150px;
+        width: 300px;
+        height: 500px;
+        width: 414px;
+    }
+
+
+}
+
+@media only screen and (max-width: 414px) {
+
+    .color_palette_big {
+
+        background-image: url(img/color_half.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 60vw;
+        height: 500px;
+        ;
+        margin-left: 40vw;
+        animation: none;
+
+
+    }
+
+    .introduction {
+        font-size: 1em;
+        margin: 0px 10px;
+    }
+
+
+
+
+}
+
+
+/* ------- MENU ---------- */
+
+
+
+
+.back {
+
+    background-image: url(img/back.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 120px;
+    margin: 2vw;
+    position: fixed;
+    right: 0;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.start {
+    width: 50vw;
+    ;
+    height: 25vh;
+
+    background-color: rgba(221, 0, 0, 0.61);
+
+
+    margin-left: 15vw;
+
+    overflow: hidden;
+
+    animation: slide_in_left 1s 1;
+}
+
+
+
+.about {
+    position: relative;
+    width: 50vw;
+    height: 25vh;
+
+    background-color: rgba(237, 222, 65, 0.7);
+    margin: auto;
+    animation: slide_in_left 1.5s 1;
+
+}
+
+.portfolio {
+    width: 50vw;
+    height: 30vh;
+
+    background-color: rgba(161, 0, 208, 0.55);
+    height: 25vh;
+
+    animation: slide_in_left 2s 1;
+    margin-left: 35vw;
+}
+
+.start h1,
+.portfolio h1,
+.about h1 {
+    text-align: center;
+    padding-top: 9vh;
+    font-size: 3vw;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+.math3 img {
+    width: 20%;
+    margin-top: -300px;
+    margin-left: 50px;
+    animation: fade_in 3s 1;
+
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .back {
+        height: 80px;
+        width: 80px;
+    }
+
+    .start {
+        width: 100vw;
+        height: 20vh;
+        background-color: rgba(221, 0, 0, 0.61);
+
+        margin-top: 50px;
+        margin-left: auto
+    }
+
+    .about {
+        width: 100vw;
+        height: 20vh;
+        background-color: rgba(237, 222, 65, 0.7);
+
+    }
+
+    .portfolio {
+        width: 100vw;
+        height: 20vh;
+        background-color: rgba(161, 0, 208, 0.55);
+        margin-left: auto
+    }
+
+    .start h1,
+    .portfolio h1,
+    .about h1 {
+        text-align: center;
+        padding-top: 12%;
+
+        font-size: 2em;
+
+    }
+
+    .math3 img {
+        display: none;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 767px) {}
+
+
+
+/* ------- OM ---------- */
+
+
+
+.question {
+
+    font-size: 1.5em;
+    margin: 100px 50px 40px;
+
+}
+
+.photo1 img {
+
+    margin-left: 50px;
+    margin-bottom: 100px;
+
+    width: 55%;
+    box-shadow: 6px 6px 50px #c3c0c0;
+
+}
+
+.color_line img {
+    width: 1%;
+    position: absolute;
+    left: 63%;
+    top: 55%;
+}
+
+.math1 img {
+
+    width: 25%;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+
+}
+
+.half_circle {
+
+    width: 12%;
+    position: absolute;
+    top: 85%;
+    right: 0;
+}
+
+
+.heading {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+.text_picture {
+    text-align: center;
+    box-shadow: 6px 6px 50px #c3c0c0;
+    width: 80%;
+    margin: auto;
+
+}
+
+.text_picture p {
+
+    text-align: center;
+    margin: 50px 50px;
+    padding-top: 50px;
+
+}
+
+
+.photo3 img {
+    width: 70%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.math2 img {
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 45%;
+
+}
+
+
+.cv {
+    display: none;
+
+}
+
+.resume {
+    margin-top: 100px;
+    /*    background-image: url(img/big_me.svg);*/
+    width: 100%;
+
+
+    text-align: right;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+
+
+.resume h1 {
+    font-size: 3em;
+}
+
+.resume h2 {
+    margin-top: 50px;
+}
+
+.resume h1,
+.resume h2,
+.resume p {
+
+    margin-left: 50%;
+    margin-right: 50px;
+    line-height: 2;
+    font-size: 2vw;
+
+}
+
+.resume h1 {
+    margin: 50px 50px;
+}
+
+
+.education {
+    padding-top: 100px;
+}
+
+
+
+.cv_button h1 {
+    margin: 20px;
+
+}
+
+.big_me {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.cv_button {
+    position: relative;
+    background-color: #f8f8f8;
+    margin: 5% 70%;
+    text-align: center;
+    font-size: 0.7em;
+    width: 20%;
+    z-index: 100;
+
+
+
+    border-radius: 30px;
+
+    box-shadow: 6px 6px 30px grey;
+
+}
+
+@media only screen and (min-width: 1920px) {
+
+    .resume h1,
+    .resume h2,
+    .resume p {
+        font-size: 2em;
+
+    }
+
+    .big_me {
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        height: auto;
+    }
+
+
+
+
+    .color_line img {
+        width: 1%;
+        position: absolute;
+        left: 63%;
+        top: 5%;
+    }
+
+    .math1 img {
+
+        width: 25%;
+        position: absolute;
+        left: 70%;
+        top: 1%;
+
+    }
+
+    .half_circle {
+
+        width: 12%;
+        position: absolute;
+        top: 8%;
+        right: 0;
+    }
+
+}
+
+@media only screen and (max-width: 1350px) {
+    .resume {
+        background-size: 100%;
+        font-size: 0.93vw;
+        width: 100%;
+        height: 2481.907px;
+    }
+
+    .cv_button {
+        width: 25%;
+
+    }
+
+    .cv_button h1 {}
+
+
+    .resume h2 {
+        margin-top: 10px;
+    }
+
+    .resume h1,
+    .resume h2,
+    .resume p {}
+
+    .resume h1 {
+        margin: 0px 50px;
+    }
+
+    .math1 {
+        top: 10%;
+    }
+
+
+
+
+
+}
+
+@media only screen and (max-width: 1023px) {
+
+    .big_me {
+        display: none;
+    }
+
+    .photo1 img {
+
+        box-shadow: none;
+        width: 80vw;
+        margin-bottom: 0px;
+        align-content: center;
+
+    }
+
+    .question {
+        margin: 50px 30px 0;
+        font-size: 0.9em;
+    }
+
+
+
+
+    .color_line img {
+        display: none;
+    }
+
+
+    .math1 img {
+
+        display: none
+    }
+
+    .half_circle {
+
+        display: none
+    }
+
+
+    .heading {
+        text-align: center;
+        font-size: 1em;
+        margin-bottom: 50px;
+    }
+
+
+
+    .text_picture {
+
+        text-align: center;
+        box-shadow: none;
+
+    }
+
+
+    .text_picture p,
+    .text_picture h2 {
+
+        position: relative;
+        margin: 0;
+        font-size: 1em;
+
+
+    }
+
+    .text_front {
+        font-size: 1.5em;
+    }
+
+
+    .photo3 img {
+        display: block;
+        width: 80vw;
+        margin: auto;
+        margin-top: 20px;
+
+    }
+
+    .math2 img {
+        display: none;
+    }
+
+    .resume {
+        background-image: none;
+        height: auto;
+        width: auto;
+
+
+        text-align: right;
+        font-size: 1em;
+    }
+
+    .cv {
+        text-align: center;
+        font-size: 3em;
+    }
+
+    .education,
+    .skills,
+    .work,
+    .hobbies {
+        text-align: center;
+        padding: 50px;
+    }
+
+    .education h2,
+    .skills h2,
+    .work h2,
+    .hobbies h2 {
+        font-size: 1.5em;
+
+    }
+
+    .education p,
+    .skills p,
+    .work p,
+    .hobbies p {
+        font-size: 1.5em;
+
+    }
+
+    .education {
+        background-color: rgba(221, 0, 0, 0.61)
+    }
+
+    .skills {
+
+        background-color: rgba(237, 222, 65, 0.7);
+
+    }
+
+    .work {
+        background-color: rgba(161, 0, 208, 0.55);
+    }
+
+    .cv_button {
+
+        background-color: white;
+        margin: auto;
+        text-align: center;
+        padding: 10px;
+        ;
+        width: 250px;
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        border-radius: 30px;
+
+        box-shadow: 6px 6px 30px grey;
+        font-size: 0.7em;
+
+    }
+
+    .resume h1 {
+        font-size: 2em;
+    }
+
+    .resume h1,
+    .resume h2,
+    .resume p {
+        margin-left: 0%;
+        margin-right: 0px;
+        line-height: 2;
+    }
+
+    .hobbies {
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 414px) {
+
+    .education h1,
+    .skills h1,
+    .work h1,
+    .hobbies h1 {
+        font-size: 2em;
+    }
+}
+
+
+/* ------- PORTFOLIO ---------- */
+
+
+.portfolio_title {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2em;
+
+}
+
+.small_portfolio_pics {
+    display: none;
+}
+
+
+.bigtema0,
+.bigtema1,
+.bigtema2,
+.bigtema3,
+.bigtema4 {
+    width: 50vw;
+    margin: 6% auto;
+
+}
+
+.math4 {
+    position: absolute;
+    top: 60vh;
+    right: 5vw;
+    width: 15vw;
+
+}
+
+.spring1 {
+
+    position: absolute;
+    top: 80vh;
+    left: 3vw;
+    width: 18vw;
+
+
+}
+
+.spring2 {
+
+    position: absolute;
+    top: 160vh;
+    right: 3vw;
+    width: 18vw;
+
+}
+
+.davinci {
+    position: absolute;
+    top: 200%;
+    left: 0vw;
+    width: 12%;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1023px) {
+
+    .big_portfolio_pics {
+        display: none;
+    }
+
+
+    .small_portfolio_pics {
+        display: block;
+    }
+
+    .portfolio_title {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1.5em;
+    }
+
+    .tema0,
+    .tema1,
+    .tema2,
+    .tema3,
+    .tema4 {
+        width: 100vw;
+        margin: 10% 0px;
+
+
+    }
+
+    .math4 {
+        display: none;
+
+    }
+
+    .spring1 {
+
+        display: none;
+
+
+    }
+
+    .spring2 {
+
+        display: none;
+
+    }
+
+    .davinci {
+
+        display: none;
+
+    }
+
+
+}
+
+/* ------- TEMA ---------- */
+
+.background0 {
+    background-image: url(img/background1.svg);
+    background-size: 100%;
+    padding-top: 100px;
+    margin-top: -150px;
+    padding-bottom: 100px;
+
+
+}
+
+
+.modulnumber h1 {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+
+
+
+
+
+.theme_title {
+    margin: 100px 50px;
+    color: white;
+
+}
+
+.assignment0 {
+    box-shadow: 6px 6px 50px #989696;
+    padding-top: 50px;
+    padding-left: 50px;
+
+    margin: 50px 50px;
+    display: flex;
+
+    background-color: black;
+    color: lawngreen;
+
+
+}
+
+.assignment0 h2,
+.assignment0 p {
+    font-family: 'VT323', monospace;
+}
+
+.assignment_text {
+
+
+    flex-basis: 65vw;
+
+}
+
+
+.link {
+    margin-left: 5vw;
+    width: 12vw;
+    padding-bottom: 25%;
+}
+
+.computer {
+    margin-left: 5vw;
+    width: 12vw;
+    margin-top: 2em;
+    margin-bottom: 25px;
+
+}
+
+
+
+.assignment h2 {
+    margin-bottom: 20px;
+}
+
+.assignment p {
+    margin-bottom: 50px;
+
+
+    margin: 50px 50px;
+    display: flex;
+}
+
+
+
+
+
+@media only screen and (max-width: 1023px) {
+
+    .assignment0 {
+        margin: 0;
+        flex-wrap: nowrap;
+        display: block;
+        padding: 50px;
+        ;
+        margin: 100px 0;
+    }
+
+
+    .computer {
+        display: none;
+    }
+
+    .background0 {
+        background-color: rgba(161, 0, 208, 0.55);
+        background-image: none;
+        padding-top: 100px;
+        margin-top: -100px;
+        padding-bottom: 100px;
+
+        margin-right: 0px;
+        box-shadow: none;
+    }
+
+
+
+    .theme_title {
+        margin: 0;
+        color: white;
+        font-size: 0.7em;
+        padding: 20px;
+
+    }
+
+
+
+    .assignment {
+        flex-wrap: nowrap;
+        display: block;
+    }
+
+
+
+
+    .link {
+        margin: auto;
+        width: 150px;
+        padding-top: 0%;
+        padding-bottom: 0;
+    }
+
+    .pdf {
+        margin: auto;
+        width: 50vw;
+    }
+
+    .assignment0 h2,
+    .assignment0 p {
+        font-size: 1.1em;
+    }
+
+
+
+
+
+}
+
+
+/* ------- TEMA1 ---------- */
+
+.background1 {
+    background-image: url(img/background2.svg);
+    background-size: 100%;
+    padding-top: 100px;
+    margin-top: -150px;
+    padding-bottom: 100px;
+
+
+}
+
+.assignment1 {
+    box-shadow: 6px 6px 50px #989696;
+    padding-top: 50px;
+    padding-left: 50px;
+    background-color: blue;
+    color: white;
+
+    margin: 50px 50px;
+    display: flex;
+}
+
+.assignment1 h2,
+.assignment1 p,
+.assignment1 li {
+    font-family: 'VT323', monospace;
+
+}
+
+
+
+@media only screen and (max-width: 1023px) {
+
+    .assignment1 {
+        margin: 0;
+        flex-wrap: nowrap;
+        display: block;
+        padding: 50px;
+        ;
+        margin: 100px 0;
+
+        flex-wrap: nowrap;
+        display: block;
+    }
+
+    .assignment1 h1 {
+        font-size: 0.5em;
+    }
+
+
+
+    .background1 {
+        background-color: rgba(237, 222, 65, 0.7);
+        background-image: none;
+        padding-top: 100px;
+        margin-top: -100px;
+        padding-bottom: 100px;
+
+        margin-right: 0px;
+        box-shadow: none;
+    }
+
+    .assignment1 {}
+
+    .assignment1 h2,
+    .assignment1 p {
+        font-size: 1.1em;
+    }
+
+    .assignment1 ul {
+        font-size: 0.4em;
+    }
+
+
+
+
+}
+
+
+/* ------- TEMA2 ---------- */
+
+.background2 {
+    background-image: url(img/background3.svg);
+    background-size: 100%;
+    padding-top: 100px;
+    margin-top: -150px;
+    padding-bottom: 100px;
+
+
+}
+
+.assignment2 {
+    box-shadow: 6px 6px 50px #989696;
+    padding-top: 50px;
+    padding-left: 50px;
+    background-color: #ededed;
+    color: #575757;
+
+    margin: 50px 50px;
+    display: flex;
+}
+
+.assignment2 h2,
+.assignment2 p,
+.assignment2 li {
+    font-family: 'Share Tech Mono', monospace;
+
+}
+
+
+
+
+@media only screen and (max-width: 1023px) {
+
+
+    .background2 {
+        background-color: rgba(221, 0, 0, 0.61);
+        background-image: none;
+        padding-top: 100px;
+        margin-top: -100px;
+        padding-bottom: 100px;
+
+        margin-right: 0px;
+        box-shadow: none;
+    }
+
+
+    .assignment2 {
+        margin: 0;
+        flex-wrap: nowrap;
+        display: block;
+        padding: 50px;
+        ;
+        margin: 100px 0;
+
+        flex-wrap: nowrap;
+        display: block;
+    }
+
+    .assignment2 h1 {
+        font-size: 0.5em;
+    }
+
+    .assignment2 h2,
+    .assignment2 p {
+        font-size: 0.9em;
+    }
+
+    .assignment2 ul {
+        font-size: 0.4em;
+    }
+
+}
+
+/* ------- TEMA3 ---------- */
+
+.background3 {
+    background-image: url(img/background0.svg);
+    background-size: 100%;
+    padding-top: 100px;
+    margin-top: -150px;
+    padding-bottom: 100px;
+
+
+}
+
+
+
+
+.assignment3 {
+    box-shadow: 6px 6px 50px #989696;
+    padding-top: 50px;
+    padding-left: 50px;
+    background-color: #45b8ff;
+    color: aliceblue;
+
+    margin: 50px 50px;
+    display: flex;
+}
+
+.assignment3 h2,
+.assignment3 p,
+.assignment3 li {
+    font-family: 'Share Tech Mono', monospace;
+
+}
+
+@media only screen and (max-width: 1023px) {
+
+
+    .background2 {
+        background-color: rgba(221, 0, 0, 0.61);
+        background-image: none;
+        padding-top: 100px;
+        margin-top: -100px;
+        padding-bottom: 100px;
+
+        margin-right: 0px;
+        box-shadow: none;
+    }
+
+    .assignment3 {
+        margin: 0;
+        flex-wrap: nowrap;
+        display: block;
+        padding: 50px;
+        ;
+        margin: 100px 0;
+
+        flex-wrap: nowrap;
+        display: block;
+    }
+
+    .assignment3 h1 {
+        font-size: 0.5em;
+    }
+
+    .assignment3 h2,
+    .assignment3 p {
+        font-size: 0.9em;
+    }
+
+    .assignment3 ul {
+        font-size: 0.4em;
+    }
+
+
+
+}
+
+
+/* ------- TEMA4 ---------- */
+
+.background3 {
+    background-image: url(img/background0.svg);
+    background-size: 100%;
+    padding-top: 100px;
+    margin-top: -150px;
+    padding-bottom: 100px;
+
+
+}
+
+
+
+
+.assignment4 {
+    box-shadow: 6px 6px 50px #989696;
+    padding-top: 50px;
+    padding-left: 50px;
+    background-color: #ffffff;
+    color: #575757;
+
+    margin: 50px 50px;
+    display: flex;
+}
+
+.assignment4 h2,
+.assignment4 p,
+.assignment4 li {}
+
+
+
+@media only screen and (max-width: 1023px) {
+
+
+
+    .background2 {
+        background-color: rgba(221, 0, 0, 0.61);
+        background-image: none;
+        padding-top: 100px;
+        margin-top: -100px;
+        padding-bottom: 100px;
+
+        margin-right: 0px;
+        box-shadow: none;
+    }
+
+
+    .assignment4 {
+        margin: 0;
+        flex-wrap: nowrap;
+        display: block;
+        padding: 50px;
+        ;
+        margin: 100px 0;
+
+        flex-wrap: nowrap;
+        display: block;
+    }
+
+    .assignment4 h1 {
+        font-size: 0.5em;
+    }
+
+    .assignment4 h2,
+    .assignment4 p {
+        font-size: 0.9em;
+    }
+
+    .assignment4 ul {
+        font-size: 0.4em;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+/* ------- EVT ---------- */
+
+
+
+
+@media only screen and (min-width: 1920px) {
+
+    main {
+        max-width: 1920px;
+
+        margin: 0 auto;
+
+        position: relative;
+
+        box-shadow: 6px 6px 50px grey;
+
+        padding-top: 5%;
+        overflow: hidden;
+
+        margin-bottom: 100px;
+
+
+    }
+
+    header {
+        max-width: 1920px;
+        margin: 0;
+
+    }
+
+    .math4 {
+        display: none;
+
+    }
+
+    .spring1 {
+
+        display: none;
+
+
+    }
+
+    .spring2 {
+
+        display: none;
+
+    }
+
+    .davinci {
+
+        display: none;
+
+    }
+
+
+}
